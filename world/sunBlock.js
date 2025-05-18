@@ -412,6 +412,6 @@ class SkinSelection {
 }
 
 export function preloadSunBlockAssets(scene){
-    scene.load.image('sunBlockMenu', '../assets/ui/shops/sun_block_empty.png')
-    scene.load.image('sunBlockContainer', '../assets/ui/shops/sun_block_container.png')
+    scene.load.image('sunBlockMenu', 'assets/ui/shops/sun_block_empty.png')
+    scene.load.image('sunBlockContainer', 'assets/ui/shops/sun_block_container.png')
 }

@@ -26,7 +26,7 @@ export class Castle extends Phaser.Scene {
         preloadAvatar(this);
 
         // Load assets for mini-game popups
-        this.load.image('mouseOut_popup', '../assets/mini_games/MouseOut/mouseOut_popup.png')
+        this.load.image('mouseOut_popup', 'assets/mini_games/MouseOut/mouseOut_popup.png')
     }
 
     async create() {
@@ -72,7 +72,7 @@ export class CastleYard extends Phaser.Scene {
         preloadAvatar(this); // Preload the player's avatar
 
         // Load assets for mini-game popups
-        this.load.image('mouseOut_popup', '../assets/mini_games/MouseOut/mouseOut_popup.png')
+        this.load.image('mouseOut_popup', 'assets/mini_games/MouseOut/mouseOut_popup.png')
     }
 
     async create() {
@@ -121,7 +121,7 @@ export class CastleInside extends Phaser.Scene {
 
         this.sound.stopAll(); 
 
-        this.load.image('typeBoo_popup', '../assets/mini_games/TypeBoo/typeBoo_popup.png')
+        this.load.image('typeBoo_popup', 'assets/mini_games/TypeBoo/typeBoo_popup.png')
     }
 
     async create() {

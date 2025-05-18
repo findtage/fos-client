@@ -222,7 +222,7 @@ export class CreatureArea extends Phaser.Scene {
         this.sound.stopAll(); 
         preloadMenu(this);
         preloadAvatar(this); // Preload the player's avatar
-        this.load.image('mouseOut_popup', '../assets/mini_games/MouseOut/mouseOut_popup.png')
+        this.load.image('mouseOut_popup', 'assets/mini_games/MouseOut/mouseOut_popup.png')
     }
 
     async create() {

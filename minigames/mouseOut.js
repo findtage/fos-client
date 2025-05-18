@@ -4,27 +4,27 @@ export class MouseOut extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('intro_scene_MouseOut', '../assets/mini_games/MouseOut/intro_screen.png');
-        this.load.image('difficulty_scene_MouseOut', '../assets/mini_games/MouseOut/difficulty_screen.png');
-        this.load.image('game_scene_MouseOut', '../assets/mini_games/MouseOut/game_scene.png');
-        this.load.image('easy_button_MouseOut', '../assets/mini_games/MouseOut/easy.png');
-        this.load.image('med_button_MouseOut', '../assets/mini_games/MouseOut/med.png');
-        this.load.image('hard_button_MouseOut', '../assets/mini_games/MouseOut/hard.png');
-        this.load.image('hex_MouseOut', '../assets/mini_games/MouseOut/hex.png');
-        this.load.image('end_game_MouseOut', '../assets/mini_games/MouseOut/end_game.png');
-        this.load.spritesheet('mouse_MouseOut', '../assets/mini_games/MouseOut/mouse.png', {
+        this.load.image('intro_scene_MouseOut', 'assets/mini_games/MouseOut/intro_screen.png');
+        this.load.image('difficulty_scene_MouseOut', 'assets/mini_games/MouseOut/difficulty_screen.png');
+        this.load.image('game_scene_MouseOut', 'assets/mini_games/MouseOut/game_scene.png');
+        this.load.image('easy_button_MouseOut', 'assets/mini_games/MouseOut/easy.png');
+        this.load.image('med_button_MouseOut', 'assets/mini_games/MouseOut/med.png');
+        this.load.image('hard_button_MouseOut', 'assets/mini_games/MouseOut/hard.png');
+        this.load.image('hex_MouseOut', 'assets/mini_games/MouseOut/hex.png');
+        this.load.image('end_game_MouseOut', 'assets/mini_games/MouseOut/end_game.png');
+        this.load.spritesheet('mouse_MouseOut', 'assets/mini_games/MouseOut/mouse.png', {
             frameWidth: 38,
             frameHeight: 35
         });
-        this.load.spritesheet('wall_MouseOut', '../assets/mini_games/MouseOut/trap.png', {
+        this.load.spritesheet('wall_MouseOut', 'assets/mini_games/MouseOut/trap.png', {
             frameWidth: 41,
             frameHeight: 131
         });
 
-        this.load.audio('winningSound_MouseOut', '../assets/mini_games/MouseOut/1_MouseOutWinningSound.mp3');
-        this.load.audio('moveSound_MouseOut',    '../assets/mini_games/MouseOut/2_MouseOutMoveSound.mp3');
-        this.load.audio('raiseSound_MouseOut',   '../assets/mini_games/MouseOut/3_MouseOutSoundRaise.mp3');
-        this.load.audio('gameOverSound_MouseOut','../assets/mini_games/MouseOut/4_MouseOutGameOverSound.mp3');
+        this.load.audio('winningSound_MouseOut', 'assets/mini_games/MouseOut/1_MouseOutWinningSound.mp3');
+        this.load.audio('moveSound_MouseOut',    'assets/mini_games/MouseOut/2_MouseOutMoveSound.mp3');
+        this.load.audio('raiseSound_MouseOut',   'assets/mini_games/MouseOut/3_MouseOutSoundRaise.mp3');
+        this.load.audio('gameOverSound_MouseOut','assets/mini_games/MouseOut/4_MouseOutGameOverSound.mp3');
     }
 
     create() {

@@ -32,13 +32,13 @@ export class TypeBoo extends Phaser.Scene {
         this.load.image('introScene_typeBoo', 'assets/mini_games/TypeBoo/introScene_TypeBoo.png');
         this.load.image('lifeFlash_typeBoo', 'assets/mini_games/TypeBoo/lifeFlash_TypeBoo.png');
 
-        this.load.audio('rightLetter_typeBoo', '../assets/mini_games/TypeBoo/right_letter.mp3');
-        this.load.audio('wrongLetter_typeBoo', '../assets/mini_games/TypeBoo/wrong_letter.mp3');
-        this.load.audio('wordMissed_typeBoo', '../assets/mini_games/TypeBoo/word_missed.mp3');
-        this.load.audio('ghost1_destroyed_typeBoo', '../assets/mini_games/TypeBoo/ghost1_destroyed.mp3');
-        this.load.audio('ghost2_destroyed_typeBoo', '../assets/mini_games/TypeBoo/ghost2_destroyed.mp3');
-        this.load.audio('ghost3_destroyed_typeBoo', '../assets/mini_games/TypeBoo/ghost3_destroyed.mp3');
-        this.load.audio('bgMusic_typeBoo', '../assets/mini_games/TypeBoo/bgMusic.mp3');
+        this.load.audio('rightLetter_typeBoo', 'assets/mini_games/TypeBoo/right_letter.mp3');
+        this.load.audio('wrongLetter_typeBoo', 'assets/mini_games/TypeBoo/wrong_letter.mp3');
+        this.load.audio('wordMissed_typeBoo', 'assets/mini_games/TypeBoo/word_missed.mp3');
+        this.load.audio('ghost1_destroyed_typeBoo', 'assets/mini_games/TypeBoo/ghost1_destroyed.mp3');
+        this.load.audio('ghost2_destroyed_typeBoo', 'assets/mini_games/TypeBoo/ghost2_destroyed.mp3');
+        this.load.audio('ghost3_destroyed_typeBoo', 'assets/mini_games/TypeBoo/ghost3_destroyed.mp3');
+        this.load.audio('bgMusic_typeBoo', 'assets/mini_games/TypeBoo/bgMusic.mp3');
         
     }
 

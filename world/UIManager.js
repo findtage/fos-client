@@ -148,12 +148,12 @@ export function createMenu(scene, player) {
 }
 
 export function preloadMenu(scene) {
-  scene.load.image('ui', '../assets/ui/menu_bar.png');
-  scene.load.image('map', '../assets/ui/map-1.png');
-  scene.load.image('actionmenu', '../assets/ui/actions_menu.png')
-  scene.load.image('inventorybg', '../assets/ui/inventory_2018.png')
-  scene.load.image('clothSelectionSideBar', '../assets/ui/clothing_selections.png');
-  scene.load.image('accSelectionSideBar', '../assets/ui/acc_selection.png');
+  scene.load.image('ui', 'assets/ui/menu_bar.png');
+  scene.load.image('map', 'assets/ui/map-1.png');
+  scene.load.image('actionmenu', 'assets/ui/actions_menu.png')
+  scene.load.image('inventorybg', 'assets/ui/inventory_2018.png')
+  scene.load.image('clothSelectionSideBar', 'assets/ui/clothing_selections.png');
+  scene.load.image('accSelectionSideBar', 'assets/ui/acc_selection.png');
 }
 
 function openMapPopup(scene) {
