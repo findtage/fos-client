@@ -1,4 +1,4 @@
-import { assets, tops, body, heads, avatar_parts, bottoms, outfits, shoes, boards, homes, face_acc, body_acc } from '../assets/data.js';
+import { assets, tops, body, heads, avatar_parts, bottoms, outfits, shoes, boards, homes, face_acc, body_acc } from 'assets/data.js';
 
 export class Preloader extends Phaser.Scene {
     constructor() {
@@ -490,18 +490,18 @@ export class Preloader extends Phaser.Scene {
 
     loadUIAssets(){
         // UI Related assets
-        this.load.image('shopIcon', '../assets/ui/shop_icon.png');
-        this.load.image('idfoneBase', '../assets/ui/idfone_base.png');
-        this.load.image('closeButton', '../assets/ui/close_button.png');
-        this.load.image('starIcon', '../assets/ui/star.png');
+        this.load.image('shopIcon', 'assets/ui/shop_icon.png');
+        this.load.image('idfoneBase', 'assets/ui/idfone_base.png');
+        this.load.image('closeButton', 'assets/ui/close_button.png');
+        this.load.image('starIcon', 'assets/ui/star.png');
         const font1 = new FontFace('AnimeAce', 'url(assets/fonts/AnimeAce.ttf)');
         const font2 = new FontFace('VAGRounded', 'url(assets/fonts/VAGRounded.ttf)');
         
 
-        this.load.image('castleCatalog0', '../assets/homes/castleCatalogue0.png');
-        this.load.image('castleCatalog1', '../assets/homes/castleCatalogue1.png');
-        this.load.image('castleCatalog2', '../assets/homes/castleCatalogue2.png');
-        this.load.image('castleCatalog3', '../assets/homes/castleCatalogue3.png');
+        this.load.image('castleCatalog0', 'assets/homes/castleCatalogue0.png');
+        this.load.image('castleCatalog1', 'assets/homes/castleCatalogue1.png');
+        this.load.image('castleCatalog2', 'assets/homes/castleCatalogue2.png');
+        this.load.image('castleCatalog3', 'assets/homes/castleCatalogue3.png');
 
         // Load fonts
         Promise.all([font1.load(), font2.load()]).then((loadedFonts) => {
@@ -511,12 +511,12 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Downtown related Assets
     loadDowntownAssets(){
-        this.load.image('downtown', '../assets/backgrounds/Downtown/downtown.png');
-        this.load.image('starcafe', '../assets/backgrounds/Downtown/star_cafe_winter.png');
-        this.load.image('leshop', '../assets/backgrounds/Downtown/leshop_old.png');
-        this.load.image('salon', '../assets/backgrounds/Downtown/stellar_salon.png');
-        this.load.image('topmodel', '../assets/backgrounds/Downtown/top_models.png');
-        this.load.image('topmodelvip', '../assets/backgrounds/Downtown/top_models_vip.png');
+        this.load.image('downtown', 'assets/backgrounds/Downtown/downtown.png');
+        this.load.image('starcafe', 'assets/backgrounds/Downtown/star_cafe_winter.png');
+        this.load.image('leshop', 'assets/backgrounds/Downtown/leshop_old.png');
+        this.load.image('salon', 'assets/backgrounds/Downtown/stellar_salon.png');
+        this.load.image('topmodel', 'assets/backgrounds/Downtown/top_models.png');
+        this.load.image('topmodelvip', 'assets/backgrounds/Downtown/top_models_vip.png');
 
         this.load.audio('downtown_music', 'assets/sounds/Downtown/Downtown.mp3');
         this.load.audio('star_cafe_music', 'assets/sounds/Downtown/Star-Cafe.mp3');
@@ -526,14 +526,14 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Uptown related Assets
     loadUptownAssets(){
-        this.load.image('uptown', '../assets/backgrounds/Uptown/uptown_winter.png'); 
-        this.load.image('furnitureshop', '../assets/backgrounds/Uptown/ottomans.png');
-        this.load.image('mymall', '../assets/backgrounds/Uptown/mymall.png');
-        this.load.image('idfoneshop', '../assets/backgrounds/Uptown/idfone_shop_fall.png');
-        this.load.image('botique', '../assets/backgrounds/Uptown/botique.png');
-        this.load.image('costumeshop', '../assets/backgrounds/Uptown/jesters.png');
-        this.load.image('boardshop', '../assets/backgrounds/Uptown/board_shop.png');
-        this.load.image('missioncenter', '../assets/backgrounds/Uptown/mission_center.png'); 
+        this.load.image('uptown', 'assets/backgrounds/Uptown/uptown_winter.png'); 
+        this.load.image('furnitureshop', 'assets/backgrounds/Uptown/ottomans.png');
+        this.load.image('mymall', 'assets/backgrounds/Uptown/mymall.png');
+        this.load.image('idfoneshop', 'assets/backgrounds/Uptown/idfone_shop_fall.png');
+        this.load.image('botique', 'assets/backgrounds/Uptown/botique.png');
+        this.load.image('costumeshop', 'assets/backgrounds/Uptown/jesters.png');
+        this.load.image('boardshop', 'assets/backgrounds/Uptown/board_shop.png');
+        this.load.image('missioncenter', 'assets/backgrounds/Uptown/mission_center.png'); 
 
         this.load.audio('uptown_music', 'assets/sounds/Uptown/Uptown-2014.mp3');
         this.load.audio('mymall_music', 'assets/sounds/Uptown/MyMall.mp3');
@@ -544,14 +544,14 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Beach / Ship / Lighthouse related Assets
     loadBeachAssets(){
-        this.load.image('beach', '../assets/backgrounds/Beach/beach.png');
-        this.load.image('danceclub', '../assets/backgrounds/Beach/palm-dance-club.png');
-        this.load.image('tanstore', '../assets/backgrounds/Beach/sunblock-1.png');
-        this.load.image('ship', '../assets/backgrounds/Ship/ship.png');
-        this.load.image('restaurant', '../assets/backgrounds/Ship/restaurant.png');
-        this.load.image('lighthouse', '../assets/backgrounds/Lighthouse/light_house.png');
-        this.load.image('lighthouse_inside', '../assets/backgrounds/Lighthouse/lighthouse_floor1.png');
-        this.load.image('lighthouse_roof', '../assets/backgrounds/Lighthouse/lighthouse_floor2.png');
+        this.load.image('beach', 'assets/backgrounds/Beach/beach.png');
+        this.load.image('danceclub', 'assets/backgrounds/Beach/palm-dance-club.png');
+        this.load.image('tanstore', 'assets/backgrounds/Beach/sunblock-1.png');
+        this.load.image('ship', 'assets/backgrounds/Ship/ship.png');
+        this.load.image('restaurant', 'assets/backgrounds/Ship/restaurant.png');
+        this.load.image('lighthouse', 'assets/backgrounds/Lighthouse/light_house.png');
+        this.load.image('lighthouse_inside', 'assets/backgrounds/Lighthouse/lighthouse_floor1.png');
+        this.load.image('lighthouse_roof', 'assets/backgrounds/Lighthouse/lighthouse_floor2.png');
 
         this.load.audio('beach_music', 'assets/sounds/Beach/Beach.mp3');
         this.load.audio('ship_music', 'assets/sounds/Beach/Ahoy-Fantage-Sea-Breeze-Cruise.mp3');
@@ -562,20 +562,20 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Forest / School / Creature Area related Assets
     loadForestAssets(){
-        this.load.image('forest', '../assets/backgrounds/Forest/forest.png');
-        this.load.image('wizard', '../assets/backgrounds/Forest/orions.png');
-        this.load.image('grotto', '../assets/backgrounds/Forest/grotto.png');
-        this.load.image('grotto_secret_one', '../assets/backgrounds/Forest/secret_forest.png');
-        this.load.image('grotto_secret_two', '../assets/backgrounds/Forest/secret_forest_tree.png');
-        this.load.image('creaturearea', '../assets/backgrounds/Forest/creature_area_winter.png');
-        this.load.image('creatureshop', '../assets/backgrounds/Forest/creature_shop_winter.png');
-        this.load.image('school_outside', '../assets/backgrounds/School/fantage_school.png');
-        this.load.image('school_inside', '../assets/backgrounds/School/school-2.png');
-        this.load.image('mathroom', '../assets/backgrounds/School/school-classroom-1.png');
-        this.load.image('englishroom', '../assets/backgrounds/School/school-classroom-2.png');
-        this.load.image('school_upstairs', '../assets/backgrounds/School/school-upstairs.png');
-        this.load.image('cafeteria', '../assets/backgrounds/School/school-cafeteria.png');
-        this.load.image('gym', '../assets/backgrounds/School/school-gym.png');
+        this.load.image('forest', 'assets/backgrounds/Forest/forest.png');
+        this.load.image('wizard', 'assets/backgrounds/Forest/orions.png');
+        this.load.image('grotto', 'assets/backgrounds/Forest/grotto.png');
+        this.load.image('grotto_secret_one', 'assets/backgrounds/Forest/secret_forest.png');
+        this.load.image('grotto_secret_two', 'assets/backgrounds/Forest/secret_forest_tree.png');
+        this.load.image('creaturearea', 'assets/backgrounds/Forest/creature_area_winter.png');
+        this.load.image('creatureshop', 'assets/backgrounds/Forest/creature_shop_winter.png');
+        this.load.image('school_outside', 'assets/backgrounds/School/fantage_school.png');
+        this.load.image('school_inside', 'assets/backgrounds/School/school-2.png');
+        this.load.image('mathroom', 'assets/backgrounds/School/school-classroom-1.png');
+        this.load.image('englishroom', 'assets/backgrounds/School/school-classroom-2.png');
+        this.load.image('school_upstairs', 'assets/backgrounds/School/school-upstairs.png');
+        this.load.image('cafeteria', 'assets/backgrounds/School/school-cafeteria.png');
+        this.load.image('gym', 'assets/backgrounds/School/school-gym.png');
         
         this.load.audio('forest_music', 'assets/sounds/Forest/Forest.mp3');
         this.load.audio('school_inside_music', 'assets/sounds/Forest/Fantage-School-2012.mp3');
@@ -585,10 +585,10 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Island related Assets
     loadIslandAssets(){
-        this.load.image('island', '../assets/backgrounds/Island/island.png');
-        this.load.image('spa', '../assets/backgrounds/Island/spa.png');
-        this.load.image('resort', '../assets/backgrounds/Island/resort.png');
-        this.load.image('islandstore', '../assets/backgrounds/Island/high-tide.png');
+        this.load.image('island', 'assets/backgrounds/Island/island.png');
+        this.load.image('spa', 'assets/backgrounds/Island/spa.png');
+        this.load.image('resort', 'assets/backgrounds/Island/resort.png');
+        this.load.image('islandstore', 'assets/backgrounds/Island/high-tide.png');
         
         this.load.audio('island_music', 'assets/sounds/Island/Island.mp3');
         this.load.audio('spa_music', 'assets/sounds/Island/The-Spa.mp3');
@@ -598,19 +598,19 @@ export class Preloader extends Phaser.Scene {
 
     // Load all Carnival / Castle/ Pet Town / Mt Fantage / Oasis related Assets
     loadNorthAssets(){
-        this.load.image('carnival', '../assets/backgrounds/Carnival/carnival.png');
-        this.load.image('arcade', '../assets/backgrounds/Carnival/arcade.png');
-        this.load.image('castle', '../assets/backgrounds/Castle/castle.png');
-        this.load.image('castleyard', '../assets/backgrounds/Castle/castle-outside.png');
-        this.load.image('castleinside', '../assets/backgrounds/Castle/castle-inside.png');
-        this.load.image('mountain', '../assets/backgrounds/Mountain/mountain.png');
-        this.load.image('cabin', '../assets/backgrounds/Mountain/cabin.png');
-        this.load.image('pet_town', '../assets/backgrounds/Pet Town/pet_town.png');
-        this.load.image('petshop', '../assets/backgrounds/Pet Town/pet_shop.png');
-        this.load.image('petschool', '../assets/backgrounds/Pet Town/pet_academy.png');
-        this.load.image('petclass', '../assets/backgrounds/Pet Town/pet_classroom.png');
-        this.load.image('oasis', '../assets/backgrounds/Oasis/oasis.png');
-        this.load.image('dock', '../assets/backgrounds/Oasis/dock.png');
+        this.load.image('carnival', 'assets/backgrounds/Carnival/carnival.png');
+        this.load.image('arcade', 'assets/backgrounds/Carnival/arcade.png');
+        this.load.image('castle', 'assets/backgrounds/Castle/castle.png');
+        this.load.image('castleyard', 'assets/backgrounds/Castle/castle-outside.png');
+        this.load.image('castleinside', 'assets/backgrounds/Castle/castle-inside.png');
+        this.load.image('mountain', 'assets/backgrounds/Mountain/mountain.png');
+        this.load.image('cabin', 'assets/backgrounds/Mountain/cabin.png');
+        this.load.image('pet_town', 'assets/backgrounds/PetTown/pet_town.png');
+        this.load.image('petshop', 'assets/backgrounds/PetTown/pet_shop.png');
+        this.load.image('petschool', 'assets/backgrounds/PetTown/pet_academy.png');
+        this.load.image('petclass', 'assets/backgrounds/PetTown/pet_classroom.png');
+        this.load.image('oasis', 'assets/backgrounds/Oasis/oasis.png');
+        this.load.image('dock', 'assets/backgrounds/Oasis/dock.png');
         
         this.load.audio('carnival_music', 'assets/sounds/Carnival.mp3');
         this.load.audio('castle_music', 'assets/sounds/Castle.mp3');
