@@ -1,0 +1,10 @@
+# Dependencies
+/node_modules
+
+# Firebase service account
+/server/firebase/firebaseServiceAccount.json
+
+# Environment variables
+.env
+package-lock.json
+

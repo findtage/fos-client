@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Fantage Client Only</title>
+    <title>Fantage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,29 +75,41 @@
 <body>
     <div class="container">
         <h1>Login</h1>
-        <input type="text" id="username" placeholder="Enter a username">
+        <input type="text" id="username" placeholder="Enter your username">
+        <div style="margin-bottom: 15px;">
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
         <button onclick="login()">Login</button>
     </div>
 
-    <p>This is a standalone client version of the game, therefore player states will not be saved</p>
+    <script type="module">
+        async function login() {
+            const username = document.getElementById("username").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
 
-    <script>
-        function login() {
-            // Get the username from the input field
-            const username = document.getElementById('username').value.trim();
-
-            // Check if the username is not empty
-            if (username) {
-                // Store the username in localStorage
-                localStorage.setItem('username', username);
-
-                // Redirect to game.html
-                window.location.href = 'client/game.html';
-            } else {
-                alert('Please enter a username!');
+            if (!username.trim()) {
+                alert("Please enter a username.");
+                return;
             }
+
+            const query = new URLSearchParams({ username, gender }).toString();
+            window.location.href = `game.html?${query}`;
+            console.log(`✅ Logged in as: ${data.username}`);
         }
+        window.login = login; // ✅ Make `login()` accessible from HTML
     </script>
 
 </body>
 </html>
+
+<!--
+All Artists that Contributed 
+ZSA/Zeed
+Fario
+DMJ
+Chevstaa
+Nicani
+Angelremains / Angelfiction
+Harmony
+-->
