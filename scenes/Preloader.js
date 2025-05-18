@@ -1,4 +1,4 @@
-import { assets, tops, body, heads, avatar_parts, bottoms, outfits, shoes, boards, homes, face_acc, body_acc } from 'assets/data.js';
+import { assets, tops, body, heads, avatar_parts, bottoms, outfits, shoes, boards, homes, face_acc, body_acc } from '../assets/data.js';
 
 export class Preloader extends Phaser.Scene {
     constructor() {
